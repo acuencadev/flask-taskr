@@ -23,5 +23,14 @@ def login_required(test):
     return wrap
 
 
+# route handlers
+@app.route('/logout/')
+def logout():
+    session.pop('logged_in', None)
+    flash("Goodbye!")
+
+    return redirect(url_for('login'))
+
+
 if __name__ == '__main__':
     app.run()
