@@ -94,5 +94,17 @@ def new_task():
         return redirect(url_for('tasks'))
 
 
+@app.route('/complete/<int:task_id>/')
+@login_required
+def complete(task_id):
+    g.db = connect_db()
+    g.db.execute("UPDATE tasks SET status = 0 WHERE task_id = {}".format(task_id))
+    g.db.commit()
+    g.db.close()
+    flash("The task was marked as complete.")
+
+    return redirect(url_for('tasks'))
+
+
 if __name__ == '__main__':
     app.run()
