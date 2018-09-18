@@ -70,5 +70,29 @@ def tasks():
     )
 
 
+@app.route('/add/', methods=['POST'])
+@login_required
+def new_task():
+    g.db = connect_db()
+    name = request.form['name']
+    date = request.form['due_date']
+    priority = request.form['priority']
+
+    if not name or not date or not priority:
+        flash("All fields are required. Please try again.")
+        return redirect(url_for('tasks'))
+    else:
+        g.db.execute("INSERT INTO tasks (name, due_date, priority, status) VALUES (?, ?, ?, 1)", [
+            request.form['name'],
+            request.form['due_date'],
+            request.form['priority']
+        ])
+        g.db.commit()
+        g.db.close()
+
+        flash("New entry was successfully posted. Thanks.")
+        return redirect(url_for('tasks'))
+
+
 if __name__ == '__main__':
     app.run()
