@@ -106,5 +106,17 @@ def complete(task_id):
     return redirect(url_for('tasks'))
 
 
+@app.route('/delete/<int:task_id>')
+@login_required
+def delete_entry(task_id):
+    g.db = connect_db()
+    g.db.execute("DELETE FROM tasks WHERE task_id = {}".format(task_id))
+    g.db.commit()
+    g.db.close()
+    flash("The task was deleted.")
+
+    return redirect(url_for('tasks'))
+
+
 if __name__ == '__main__':
     app.run()
