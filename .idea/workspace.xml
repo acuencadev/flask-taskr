@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="785ee519-28eb-459b-87a0-b0759d21018c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +36,7 @@
           <entry key="gitignore" value="22" />
           <entry key="html" value="626" />
           <entry key="md" value="24" />
-          <entry key="py" value="5539" />
+          <entry key="py" value="5881" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -45,7 +45,7 @@
           <entry key="HTML" value="626" />
           <entry key="Markdown" value="24" />
           <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="5531" />
+          <entry key="Python" value="5873" />
           <entry key="SQL" value="8" />
         </counts>
       </usages-collector>
@@ -55,7 +55,7 @@
           <entry key="gitignore" value="3" />
           <entry key="html" value="5" />
           <entry key="md" value="2" />
-          <entry key="py" value="18" />
+          <entry key="py" value="19" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -65,7 +65,7 @@
           <entry key="HTML" value="5" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="18" />
+          <entry key="Python" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -84,10 +84,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="118" column="66" selection-start-line="118" selection-start-column="66" selection-end-line="118" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+                <marker date="1537542087395" expanded="true" signature="800:3186" ph="..." />
+                <marker date="1537542087395" expanded="true" signature="2730:3186" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+            <state relative-caret-position="405">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <marker date="1537541814037" expanded="true" signature="199:204" ph="..." />
@@ -123,11 +137,11 @@
         <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/templates/tasks.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/views.py" />
         <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/db_create.py" />
         <option value="$PROJECT_DIR$/_config.py" />
         <option value="$PROJECT_DIR$/forms.py" />
+        <option value="$PROJECT_DIR$/views.py" />
       </list>
     </option>
   </component>
@@ -396,17 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <marker date="1537470475298" expanded="true" signature="772:2637" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db_create.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -437,13 +440,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <marker date="1537541814037" expanded="true" signature="199:204" ph="..." />
             <marker date="1537541814037" expanded="true" signature="677:682" ph="..." />
             <marker date="1537541814037" expanded="true" signature="1179:1184" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="118" column="66" selection-start-line="118" selection-start-column="66" selection-end-line="118" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <marker date="1537542087395" expanded="true" signature="800:3186" ph="..." />
+            <marker date="1537542087395" expanded="true" signature="2730:3186" ph="..." />
           </folding>
         </state>
       </provider>
