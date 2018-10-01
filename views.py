@@ -3,6 +3,8 @@ from forms import AddTaskForm, LoginForm, RegisterForm
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, flash, redirect, render_template, request, session, url_for
 
+import datetime
+
 
 app = Flask(__name__)
 app.config.from_object("_config")
@@ -74,7 +76,8 @@ def new_task():
 
     if request.method == 'POST':
         if form.validate_on_submit():
-            new_task = Task(form.name.data, form.due_date.data, form.priority.data, "1")
+            new_task = Task(form.name.data, form.due_date.data, form.priority.data,
+                            datetime.datetime.utcnow(), "1", "1")
 
             db.session.add(new_task)
             db.session.commit()
