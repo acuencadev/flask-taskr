@@ -78,7 +78,7 @@ def new_task():
     if request.method == 'POST':
         if form.validate_on_submit():
             new_task = Task(form.name.data, form.due_date.data, form.priority.data,
-                            datetime.datetime.utcnow(), "1", "1")
+                            datetime.datetime.utcnow(), "1", session['user_id'])
 
             db.session.add(new_task)
             db.session.commit()
