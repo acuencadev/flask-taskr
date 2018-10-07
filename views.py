@@ -74,6 +74,7 @@ def tasks():
 @app.route('/add/', methods=['POST'])
 @login_required
 def new_task():
+    error = None
     form = AddTaskForm(request.form)
 
     if request.method == 'POST':
@@ -86,7 +87,7 @@ def new_task():
 
             flash("New entry was successfully posted. Thanks.")
 
-        return redirect(url_for('tasks'))
+            return render_template('tasks.html', form=form, error=error)
 
 
 @app.route('/complete/<int:task_id>/')
