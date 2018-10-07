@@ -92,7 +92,12 @@ def new_task():
 
             flash("New entry was successfully posted. Thanks.")
 
-            return render_template('tasks.html', form=form, error=error)
+            return render_template('tasks.html',
+                                   form=form,
+                                   error=error,
+                                   open_tasks=open_tasks(),
+                                   closed_tasks=closed_tasks()
+                                   )
 
 
 @app.route('/complete/<int:task_id>/')
