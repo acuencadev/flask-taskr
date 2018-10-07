@@ -25,6 +25,14 @@ def login_required(test):
     return wrap
 
 
+def open_tasks():
+    return db.session.query(Task).filter_by(status='1').order_by(Task.due_date.asc())
+
+
+def closed_tasks():
+    return db.session.query(Task).filter_by(status='0').order_by(Task.due_date.asc())
+
+
 # route handlers
 @app.route('/logout/')
 def logout():
