@@ -23,4 +23,5 @@ htmlcov/
 *,cover
 
 # DB
+test.db
 flasktaskr.db
